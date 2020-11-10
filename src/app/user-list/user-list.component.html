@@ -1,0 +1,10 @@
+<table>
+    <th style="border: 1px solid black;">Name</th>
+    <th>Phone</th>
+    <tr  *ngFor="let user of users; let i=index" > 
+       <td> {{user.name}}</td>
+        <td>{{user.phone}}</td>
+        <button (click)="onEdit(i)">Edit</button>
+        <button (click)="onDelete(i)">Delete</button>
+    </tr>
+</table>

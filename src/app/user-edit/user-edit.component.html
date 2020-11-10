@@ -1,0 +1,21 @@
+<form [formGroup]="editform">
+
+    <div>
+      <label for="name">
+        Name
+      </label>
+      <input id="name" type="text" formControlName="name">
+    </div>
+  
+    <div>
+      <label for="phone">
+        Contact
+      </label>
+      <input id="phone" type="text" formControlName="phone">
+    </div>
+  
+    
+    
+  </form>
+  <button  (click)="onSubmit()">Save User</button>
+  <button  [routerLink] = "'/listusers'" >Cancel</button>

@@ -1,0 +1,21 @@
+<form [formGroup]="userform">
+
+    <div>
+      <label for="name">
+        Name
+      </label>
+      <input id="name" type="text" formControlName="name">
+    </div>
+  
+    <div>
+      <label for="address">
+        Contact
+      </label>
+      <input id="address" type="text" formControlName="phone">
+    </div>
+  
+    
+    
+  </form>
+  <button  (click)="onSubmit()">Add User</button>
+  <button  (click)="onCancel()">Cancel</button>
